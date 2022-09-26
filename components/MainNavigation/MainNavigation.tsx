@@ -1,19 +1,9 @@
-import Announcement from "../Announcement/Announcement";
-import Logo from "../Logo";
-import Data from '../../fakedata/Data';
 import Link from "next/link";
 import { CgSearch } from "react-icons/cg";
 
 export default function MainNavigation() {
   return (
-    <header>
-      <Announcement message={Data.announcement} />
-      <nav className="flex w-full h-16 items-center px-6 border-b border-neutral-300 uppercase text-sm">
-        <div className="flex-1">
-          <Link href={"/"}>
-            <a><Logo /></a>
-          </Link>
-        </div>
+    <nav className="hidden md:flex items-center px-4 uppercase text-sm">
         <ul className="flex h-8 items-center child:px-2 border-r-2 border-neutral-300 pr-1 mr-1">
           <li>
             <Link href={"/"}>
@@ -36,7 +26,7 @@ export default function MainNavigation() {
             </Link>
           </li>
           <li>
-              <a role={'button'}><CgSearch size={22} /></a>
+              <a role={'button'} className="hover:text-neutral-500 transition-colors"><CgSearch size={22} /></a>
           </li>
         </ul>
         <ul className="flex child:px-2">
@@ -48,6 +38,5 @@ export default function MainNavigation() {
           </li>
         </ul>
       </nav>
-    </header>
   )
 }
