@@ -31,10 +31,10 @@ export default function MainNavigation() {
         </ul>
         <ul className="flex child:px-2">
           <li>
-            <Link href={"#"}><a className="font-bold hover:border-b-2 hover:border-neutral-300 transition-colors">Registrar-se</a></Link>
+            <Link href={"#"}><a className="font-bold hover:text-neutral-700 transition-colors">Registrar-se</a></Link>
           </li>
           <li>
-            <Link href={"#"}><a className="hover:border-b-2 hover:border-neutral-300 transition-colors">Login</a></Link>
+            <Link href={"#"}><a className="hover:text-neutral-700 transition-colors">Login</a></Link>
           </li>
         </ul>
       </nav>
