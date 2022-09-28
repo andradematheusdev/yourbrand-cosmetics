@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import {Header, Slider} from '../components/';
+import HomeHightlight from '../components/HomeHightlight/HomeHightlight';
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,9 @@ const Home: NextPage = () => {
         <section>
           <Slider />
         </section>
+        <article className='flex flex-col w-full p-16 gap-y-2'>
+          <HomeHightlight />
+        </article>
       </main>
     </div>
   )
