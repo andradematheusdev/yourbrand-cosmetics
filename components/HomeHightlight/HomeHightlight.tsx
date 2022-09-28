@@ -7,11 +7,11 @@ import Button from "../Button/Button";
 
 export default function HomeHightlight() {
   return (
-    <>
+    <div className="px-8">
       <SectionTitle title={Data.homeHighlight.catName} />
-        <div className='flex flex-1'>
+        <div className='flex flex-1 flex-col sm:flex-row'>
 
-          <div className='w-1/3'>
+          <div className='w-full md:w-1/2 md:px-4 lg:w-2/5 lg:px-0'>
             <h1 className='text-5xl uppercase'>
               {Data.homeHighlight.title}
             </h1>
@@ -19,7 +19,7 @@ export default function HomeHightlight() {
               {Data.homeHighlight.text}
             </span>
             <hr className="my-4" />
-            <div className="flex w-full">
+            <div className="flex w-full flex-wrap">
               <div className="flex-1">
                 <CustomTag text="brilho" />
                 <CustomTag text="long last" />
@@ -31,12 +31,12 @@ export default function HomeHightlight() {
             </div>
           </div>
 
-          <div className='flex justify-end flex-1 overflow-hidden'>
+          <div className='flex justify-end flex-1 overflow-hidden md:px-4 lg:px-0'>
             <div className='w-[520px] h-[720px] relative '>
               <Image src={"/images/products/youcareshinnee.jpg"} objectFit={'cover'} layout={'fill'} width={"100%"} height={"100%"} alt={"YouCare Shinnee"} />
             </div>
           </div>
         </div>
-    </>
+    </div>
   )
 }

@@ -5,6 +5,6 @@ type Props = {
 
 export default function Button({url = "#", text}: Props) {
   return (
-    <a href={url} role="button" className="border-2 border-black py-3 p-4 font-bold text-sm">{text}</a>
+    <a href={url} role="button" className="border-2 border-black py-3 p-4 font-bold text-sm whitespace-nowrap">{text}</a>
   )
 }

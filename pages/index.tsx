@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <section>
           <Slider />
         </section>
-        <article className='flex flex-col w-full p-16 gap-y-2'>
+        <article className='flex flex-col w-full p-4 lg:p-16 gap-y-2'>
           <HomeHightlight />
         </article>
       </main>
