@@ -19,14 +19,14 @@ export default function HomeHightlight() {
               {Data.homeHighlight.text}
             </span>
             <hr className="my-4" />
-            <div className="flex w-full flex-wrap">
+            <div className="flex w-full items-center flex-wrap gap-x-2 gap-y-4 mb-4">
               <div className="flex-1">
                 <CustomTag text="brilho" />
                 <CustomTag text="long last" />
                 <CustomTag text="silicones puros" />
               </div>
-              <div>
-                <Button text="QUERO O MEU!" />
+              <div className="flex-1">
+                <Button text="QUERO O MEU!" className="w-full"/>
               </div>
             </div>
           </div>

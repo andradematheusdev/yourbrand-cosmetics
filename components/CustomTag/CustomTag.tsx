@@ -6,7 +6,7 @@ type Props = {
 
 export default function CustomTag({text}: Props) {
   return (
-    <span className='px-2 py-1 bg-neutral-300 uppercase font-bold rounded whitespace-nowrap m-1 text-sm'>
+    <span className='px-2 py-1 bg-neutral-300 uppercase font-bold rounded whitespace-nowrap m-1 text-xs'>
       {text}
     </span>
   )
