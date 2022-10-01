@@ -10,7 +10,8 @@ export default function Button({url = "#", text, className}: Props) {
       href={url}
       role="button"
       className={`
-        flex items-center justify-center border-2 border-black py-3 p-4 font-bold text-sm whitespace-nowrap 
+        flex items-center justify-center border-2 border-black py-3 p-4 font-bold text-sm whitespace-nowrap
+        hover:bg-black hover:text-white transition-colors
         ${className}
       `}
     >
