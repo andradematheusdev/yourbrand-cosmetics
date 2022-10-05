@@ -8,6 +8,7 @@ import TopSelling from './TopSelling/TopSelling';
 import Separator from './Separator/Separator';
 import InstaPics from './InstaPics/InstaPics';
 import Footer from './Footer/Footer';
+import Ambassador from './Ambassador/Ambassador';
 
 export {
   MainNavigation,
@@ -20,4 +21,5 @@ export {
   Separator,
   InstaPics,
   Footer,
+  Ambassador,
 };

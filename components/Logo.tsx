@@ -2,9 +2,10 @@ type Color = `#${string}`;
 
 type Props = {
   color?: Color;
+  className?: string;
 }
 
-function Logo({color = "#000"}: Props) {
+function Logo({color = "#000", className}: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,6 +13,7 @@ function Logo({color = "#000"}: Props) {
       height="17"
       fill="none"
       viewBox="0 0 152 17"
+      className={className}
     >
       <path
         fill={color}
