@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import {Header, InstaPics, SectionTitle, Separator, Slider, TopSelling} from '../components/';
+import {Footer, Header, InstaPics, SectionTitle, Separator, Slider, TopSelling} from '../components/';
 import HomeHightlight from '../components/HomeHightlight/HomeHightlight';
 import Logo from '../components/Logo';
 
@@ -53,6 +53,7 @@ const Home: NextPage = () => {
           <InstaPics />
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

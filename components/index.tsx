@@ -7,6 +7,7 @@ import Button from './Button/Button';
 import TopSelling from './TopSelling/TopSelling';
 import Separator from './Separator/Separator';
 import InstaPics from './InstaPics/InstaPics';
+import Footer from './Footer/Footer';
 
 export {
   MainNavigation,
@@ -18,4 +19,5 @@ export {
   TopSelling,
   Separator,
   InstaPics,
+  Footer,
 };
