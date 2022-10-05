@@ -5,6 +5,8 @@ import Slider from './Slider/Slider';
 import SectionTitle from './SectionTitle/SectionTitle';
 import Button from './Button/Button';
 import TopSelling from './TopSelling/TopSelling';
+import Separator from './Separator/Separator';
+import InstaPics from './InstaPics/InstaPics';
 
 export {
   MainNavigation,
@@ -14,4 +16,6 @@ export {
   SectionTitle,
   Button,
   TopSelling,
+  Separator,
+  InstaPics,
 };

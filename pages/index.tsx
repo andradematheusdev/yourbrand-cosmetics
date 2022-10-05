@@ -1,7 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import {Header, Slider, TopSelling} from '../components/';
+import Image from 'next/image';
+import Link from 'next/link';
+import {Header, InstaPics, SectionTitle, Separator, Slider, TopSelling} from '../components/';
 import HomeHightlight from '../components/HomeHightlight/HomeHightlight';
+import Logo from '../components/Logo';
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +29,30 @@ const Home: NextPage = () => {
           <TopSelling />
         </section>
       </main>
+      <section className='mt-20'>
+        <div className='flex w-full justify-between px-4 md:px-8 mb-4'>
+          <div className='flex items-center'>
+            <SectionTitle title={<Logo />} />
+            <Separator />
+            <span>NAS REDES SOCIAIS</span>
+          </div>
+          <div className='flex gap-x-2'>
+            <Link href={"#"} >
+              <a href="">
+                <Image src={"/images/assets/fblogo.png"} alt="" width={32} height={32} layout='fixed' />
+              </a>
+            </Link>
+            <Link href={"#"}>
+              <a>
+                <Image src={"/images/assets/instalogo.png"} alt="" width={34} height={34} layout='fixed' />
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div>
+          <InstaPics />
+        </div>
+      </section>
     </div>
   )
 }
