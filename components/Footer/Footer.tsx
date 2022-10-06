@@ -1,19 +1,20 @@
 import Ambassador from "../Ambassador/Ambassador";
 import Logo from "../Logo";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import Sitemap from "../Sitemap/Sitemap";
 import SocialIcons from "../SocialIcons/SocialIcons";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col w-full items-center justify-between bg-neutral-800 pt-16">
-      <div>
-        <Logo color="#fff" />
+    <footer className="flex flex-col w-full items-center justify-between bg-neutral-900 pt-16">
+      <div className="mb-8">
+        <Logo color="#fff" className="scale-150"/>
       </div>
-      <div className="grid w-full grid-rows-3 md:grid-rows-1 grid-cols-1 md:grid-cols-3 px-10">
-        <div>
+      <div className="flex w-full px-10">
+        <div className="flex-1">
           <div className="mb-12">
             <SectionTitle title="Embaixadoras" className="text-white font-normal" />
-            <div className="grid grid-cols-3 grid-rows-1 justify-items-start">
+            <div className="flex gap-x-2">
               <Ambassador />
               <Ambassador />
               <Ambassador />
@@ -26,11 +27,16 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div>
-          <div>Sitemap</div>
-          <div>Linhas</div>
+        <div className="flex-1 px-8">
+          <div>
+            <SectionTitle title="sitemap" className="text-white" />
+            <Sitemap />
+          </div>
+          <div>
+            <SectionTitle title="linhas" className="text-white" />
+          </div>
         </div>
-        <div>
+        <div className="flex-1">
           Contato
         </div>
       </div>
