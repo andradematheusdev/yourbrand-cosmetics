@@ -1,5 +1,7 @@
 import Ambassador from "../Ambassador/Ambassador";
+import FootAddress from "../FooterAddress/FootAddress";
 import Logo from "../Logo";
+import ProductsCategory from "../ProductsCategory/ProductsCategory";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import Sitemap from "../Sitemap/Sitemap";
 import SocialIcons from "../SocialIcons/SocialIcons";
@@ -34,10 +36,11 @@ export default function Footer() {
           </div>
           <div>
             <SectionTitle title="linhas" className="text-white" />
+            <ProductsCategory />
           </div>
         </div>
         <div className="flex-1">
-          Contato
+          <FootAddress />
         </div>
       </div>
       <div className="px-4 mt-4 w-full">
