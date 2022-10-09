@@ -30,10 +30,10 @@ const Home: NextPage = () => {
         </section>
       </main>
       <section className='mt-20'>
-        <div className='flex w-full justify-between px-4 md:px-8 mb-4'>
-          <div className='flex items-center'>
-            <SectionTitle title={<Logo />} />
-            <Separator />
+        <div className='flex w-full flex-col md:flex-row items-center justify-between px-4 md:px-8 mb-4 flex-wrap gap-y-1'>
+          <div className='flex items-center justify-center flex-col md:flex-row gap-y-1'>
+            <SectionTitle title={<Logo />} className="w-full" responsive/>
+            <Separator className='hidden md:inline-block'/>
             <span>NAS REDES SOCIAIS</span>
           </div>
           <div className='flex gap-x-2'>

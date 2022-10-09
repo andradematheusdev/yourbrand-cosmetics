@@ -1,6 +1,6 @@
 export default function Sitemap() {
   return (
-    <ul className="grid grid-rows-6 grid-cols-2 place-items-start list-disc text-white">
+    <ul className="grid grid-cols-2 text-white px-4">
       <li>HOME</li>
       <li>LOJA</li>
       <li>LINHAS</li>

@@ -12,8 +12,10 @@ export default function Footer() {
       <div className="mb-8">
         <Logo color="#fff" className="scale-150"/>
       </div>
-      <div className="flex w-full px-10">
-        <div className="flex-1">
+      <div className="flex flex-col md:flex-row w-full px-4 md:px-16">
+
+        {/* first col */}
+        <div className="flex-1 mb-12 sm:mb-0">
           <div className="mb-12">
             <SectionTitle title="Embaixadoras" className="text-white font-normal" />
             <div className="flex gap-x-2">
@@ -24,13 +26,13 @@ export default function Footer() {
           </div>
           <div>
             <SectionTitle title="Redes Sociais" className="text-white font-normal" />
-            <div>
-              <SocialIcons />
-            </div>
+            <SocialIcons />
           </div>
         </div>
-        <div className="flex-1 px-8">
-          <div>
+
+        {/* second col */}
+        <div className="flex-1 mb-8 md:mb-0 place-content-start md:px-16">
+          <div className="mb-16 md:mb-8">
             <SectionTitle title="sitemap" className="text-white" />
             <Sitemap />
           </div>
@@ -39,13 +41,18 @@ export default function Footer() {
             <ProductsCategory />
           </div>
         </div>
+
+      {/* third col */}
         <div className="flex-1">
           <FootAddress />
         </div>
+
       </div>
       <div className="px-4 mt-4 w-full">
-        <div className="flex w-full py-6 items-center justify-between border-t border-neutral-700 px-6">
-          <span className="text-white flex-1 flex"><Logo color="#fff" className="mr-2" /> Ⓒ 2022</span>
+        <div className="flex flex-wrap w-full py-6 items-center justify-center md:justify-between border-t border-neutral-700 px-6">
+          <span className="text-white flex-1 flex justify-center md:justify-start">
+            <Logo color="#fff" className="mr-2" /> Ⓒ 2022
+          </span>
           <span className="text-white">Feito por Matheus.Dev</span>
         </div>
       </div>
