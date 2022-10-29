@@ -9,6 +9,7 @@ import Separator from './Separator/Separator';
 import InstaPics from './InstaPics/InstaPics';
 import Footer from './Footer/Footer';
 import Ambassador from './Ambassador/Ambassador';
+import { ScrollToTop } from './ScrollToTop/ScrollToTop';
 
 export {
   MainNavigation,
@@ -22,4 +23,5 @@ export {
   InstaPics,
   Footer,
   Ambassador,
+  ScrollToTop,
 };

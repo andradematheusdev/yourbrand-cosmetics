@@ -2,9 +2,18 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import {Footer, Header, InstaPics, SectionTitle, Separator, Slider, TopSelling} from '../components/';
 import HomeHightlight from '../components/HomeHightlight/HomeHightlight';
 import Logo from '../components/Logo';
+import {
+  Footer,
+  Header,
+  InstaPics,
+  SectionTitle,
+  Separator,
+  Slider,
+  TopSelling,
+  ScrollToTop
+} from '../components/';
 
 const Home: NextPage = () => {
   return (
@@ -53,6 +62,7 @@ const Home: NextPage = () => {
           <InstaPics />
         </div>
       </section>
+      <ScrollToTop />
       <Footer />
     </div>
   )
