@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CgSearch } from "react-icons/cg";
+import { SearchPopover } from "../SearchPopover/SearchPopover";
 
 export default function MainNavigation() {
   return (
@@ -26,7 +27,7 @@ export default function MainNavigation() {
             </Link>
           </li>
           <li>
-              <a role={'button'} className="hover:text-neutral-500 transition-colors"><CgSearch size={22} /></a>
+              <SearchPopover />
           </li>
         </ul>
         <ul className="flex child:px-2">

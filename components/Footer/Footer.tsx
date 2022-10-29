@@ -50,7 +50,7 @@ export default function Footer() {
       </div>
       <div className="px-4 mt-4 w-full">
         <div className="flex flex-wrap w-full py-6 items-center justify-center md:justify-between border-t border-neutral-700 px-6">
-          <span className="text-white flex-1 flex justify-center md:justify-start bg-red-500">
+          <span className="text-white flex-1 flex justify-center md:justify-start">
             <Logo color="#fff" className="mr-2" /> Ⓒ 2022
           </span>
           <span className="text-white">Feito por Matheus.Dev</span>
