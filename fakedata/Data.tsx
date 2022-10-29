@@ -9,7 +9,13 @@ const Data = {
       text: "Quero o meu!",
       url: "#",
     }
-  }
+  },
+  carousel: [
+    {
+      id: 1,
+      image: '/images/carousel/image1.jpg'
+    }
+  ],
 }
 
 export default Data;
