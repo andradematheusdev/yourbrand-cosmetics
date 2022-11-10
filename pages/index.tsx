@@ -62,8 +62,15 @@ const Home: NextPage = () => {
             </Link>
           </div>
         </div>
-        <div>
-          <InstaPics />
+        <div className='grid w-full grid-cols-2 grid-rows-4 md:grid-rows-2 md:grid-cols-4' >
+          <InstaPics image='/images/products/lp.jpg'/>
+          <InstaPics image='/images/products/nc.jpg'/>
+          <InstaPics image='/images/products/stm.jpg'/>
+          <InstaPics image='/images/products/ycc.jpg'/>
+          <InstaPics image='/images/products/nc.jpg'/>
+          <InstaPics image='/images/products/stm.jpg'/>
+          <InstaPics image='/images/products/lp.jpg'/>
+          <InstaPics image='/images/products/youcareshinnee.jpg'/>
         </div>
       </section>
       <ScrollToTop />
