@@ -6,9 +6,19 @@ interface IProductProps{
   name: string;
   image: string;
   price: string;
+  rating: number;
 }
 
-export default function Product({image,name,price}: IProductProps) {
+export default function Product({image,name,price, rating}: IProductProps) {
+  const stars = [];
+
+  for (let i = 0; i < rating; i++) {
+    stars.push(<AiFillStar color='orange' />);
+  }
+
+  while (stars.length < 5) {
+    stars.push(<AiFillStar />);
+  }
   return (
     <div className='flex flex-col justify-center gap-y-1'>
       <div className='flex justify-center flex-1 md:px-4 lg:px-0'>
@@ -18,12 +28,8 @@ export default function Product({image,name,price}: IProductProps) {
       </div>
       <span className='text-center text-base uppercase'>{name}</span>
       <span className='text-base text-center font-bold'>R${parseFloat(price).toFixed(2)}</span>
-      <div className='flex w-full justify-center'>
-        <AiFillStar color='orange' />
-        <AiFillStar color='orange' />
-        <AiFillStar color='orange' />
-        <AiFillStar />
-        <AiFillStar />
+      <div className='flex w-full justify-center'>        
+        {stars}
       </div>
       <Button text='COMPRAR' />
     </div>
