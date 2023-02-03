@@ -1,31 +1,27 @@
 import CarouselDots from "./CarouselDots";
 import CarouselImage from "./CarouselImage";
-import CarouselNavigation from "./CarouselNavigation";
+import { CarouselNavigationLeft, CarouselNavigationRight } from "./CarouselNavigation";
 
 interface IData {
   Data: {
     id: number;
     image: string;
-  }[]
+  }[];
 }
 
 export const Carousel = (props: IData) => {
   return (
-    <div className={`flex w-full flex-col h-[600px] max-h-[600px] justify-between items-center relative`}>
-      <div>
-        {/* Heading */}
-      </div>
-      <div className="w-full h-full">
-        <div className="relative top-0 right-0 bottom-0 left-0 w-full h-full">
-          <CarouselImage source={props.Data[0].image} />
+    <div className="flex w-full flex-col h-[600px] max-h-[600px] justify-center relative">
+      <CarouselImage source={props.Data[1].image} />
+      <div className="grid grid-cols-2 grid-rows-1 z-10">
+        <div className="flex w-full">
+          <CarouselNavigationLeft />
         </div>
-        <div className="absolute top-1/2 -translate-y-1/2 w-full">
-          <CarouselNavigation />
-        </div>
-        <div className="absolute bottom-0 w-full" >
-          <CarouselDots />
+        <div className="flex w-full justify-end">
+          <CarouselNavigationRight />
         </div>
       </div>
+      {/* <CarouselDots /> */}
     </div>
-  )
-}
+  );
+};

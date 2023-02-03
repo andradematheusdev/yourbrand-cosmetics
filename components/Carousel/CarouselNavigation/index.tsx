@@ -1,14 +1,17 @@
-import {FiChevronLeft, FiChevronRight} from 'react-icons/fi';
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-export default function CarouselNavigation() {
+export const CarouselNavigationLeft = () => {
   return (
-    <div className="flex w-full justify-between">
-      <a role={'button'} className="bg-[rgba(0,0,0,.3)] hover:bg-[rgba(0,0,0,.2)] py-6 px-1">
-        <FiChevronLeft color='#fff' size={32} />
-      </a>
-      <a role={'button'} className="bg-[rgba(0,0,0,.3)] hover:bg-[rgba(0,0,0,.2)]  py-6 px-1">
-        <FiChevronRight color='#fff' size={32} />
-      </a>
-    </div>
-  )
-}
+    <a role={"button"} className="w-10 py-6 px-1 bg-neutral-900 bg-opacity-80 hover:bg-opacity-90">
+      <FiChevronLeft color="#fff" size={32} />
+    </a>
+  );
+};
+
+export const CarouselNavigationRight = () => {
+  return (
+    <a role={"button"} className="w-10 py-6 px-1 bg-neutral-900 bg-opacity-80 hover:bg-opacity-90">
+      <FiChevronRight color="#fff" size={32} />
+    </a>
+  );
+};

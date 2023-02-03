@@ -14,7 +14,11 @@ const Data = {
     {
       id: 1,
       image: '/images/carousel/image1.jpg'
-    }
+    },
+    {
+      id: 2,
+      image: '/images/carousel/image2.jpg'
+    },
   ],
 }
 

@@ -9,7 +9,7 @@ import {
 
 export const Header = () => {
   return (
-    <header className="border-b border-neutral-300">
+    <header className="border-b border-neutral-300 transition-all">
       <Announcement message={Data.announcement} />
       <div className="flex w-full h-16 items-center px-4">        
         <div className="flex items-center flex-1">
