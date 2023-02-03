@@ -1,6 +1,6 @@
-import CarouselDots from "./CarouselDots/CarouselDots";
-import CarouselImage from "./CarouselImage/CarouselImage";
-import CarouselNavigation from "./CarouselNavigation/CarouselNavigation";
+import CarouselDots from "./CarouselDots";
+import CarouselImage from "./CarouselImage";
+import CarouselNavigation from "./CarouselNavigation";
 
 interface IData {
   Data: {
@@ -9,7 +9,7 @@ interface IData {
   }[]
 }
 
-export default function Carousel(props: IData) {
+export const Carousel = (props: IData) => {
   return (
     <div className={`flex w-full flex-col h-[600px] max-h-[600px] justify-between items-center relative`}>
       <div>

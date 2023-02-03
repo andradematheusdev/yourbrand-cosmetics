@@ -1,4 +1,4 @@
-export default function Sitemap() {
+export const Sitemap = () => {
   return (
     <ul className="grid grid-cols-2 text-white px-4">
       <li>HOME</li>

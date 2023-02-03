@@ -1,4 +1,4 @@
-export default function FootAddress() {
+export const FooterAddress = () => {
   return (
     <aside className="flex flex-col w-full items-center justify-start pt-4 md:pt-0 pl-0 md:pl-16 border-t md:border-t-0 md:border-l border-neutral-800 h-full text-white">
       <h2 className="font-bold text-lg uppercase mb-4">Contato</h2>

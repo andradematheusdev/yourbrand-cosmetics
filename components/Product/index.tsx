@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import {AiFillStar} from "react-icons/ai";
-import Button from '../Button/Button';
+import { AiFillStar } from "react-icons/ai";
+import { Button } from '../';
 
 interface IProductProps{
   name: string;
@@ -9,7 +9,7 @@ interface IProductProps{
   rating: number;
 }
 
-export default function Product({image,name,price, rating}: IProductProps) {
+export const Product = ({image,name,price, rating}: IProductProps) => {
   const stars = [];
 
   for (let i = 0; i < rating; i++) {

@@ -1,12 +1,12 @@
-import classNames from 'classnames';
 import { useState } from 'react';
-import {CgClose} from 'react-icons/cg';
+import classNames from 'classnames';
+import { CgClose } from 'react-icons/cg';
 
-type Props = {
+interface IAnnouncementProps {
   message: string;
 }
 
-export default function Announcement({message}: Props) {
+export const Announcement = ({message}: IAnnouncementProps) => {
   const [isAnnounceVisible, setIsAnnounceVisible] = useState(true);
 
   function handleClick(){

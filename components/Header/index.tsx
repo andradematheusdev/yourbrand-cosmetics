@@ -1,11 +1,13 @@
-import Announcement from "../Announcement/Announcement";
 import Logo from "../Logo";
 import Data from '../../fakedata/Data';
 import Link from "next/link";
-import MainNavigation from "../MainNavigation/MainNavigation";
-import MobileNavToggle from "../MobileNavToggle/MobileNavToggle";
+import {
+  Announcement,
+  MainNavigation,
+  MobileNavToggle
+} from "../";
 
-export default function Header() {
+export const Header = () => {
   return (
     <header className="border-b border-neutral-300">
       <Announcement message={Data.announcement} />

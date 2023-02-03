@@ -1,12 +1,14 @@
-import Ambassador from "../Ambassador/Ambassador";
-import FootAddress from "../FooterAddress/FootAddress";
 import Logo from "../Logo";
-import ProductsCategory from "../ProductsCategory/ProductsCategory";
-import SectionTitle from "../SectionTitle/SectionTitle";
-import Sitemap from "../Sitemap/Sitemap";
-import SocialIcons from "../SocialIcons/SocialIcons";
+import {
+  Ambassador,
+  FooterAddress,
+  SocialIcons,
+  Sitemap,
+  SectionTitle,
+  ProductsCategory
+} from "../";
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer className="flex flex-col w-full items-center justify-between bg-neutral-900 pt-16">
       <div className="mb-8">
@@ -44,7 +46,7 @@ export default function Footer() {
 
       {/* third col */}
         <div className="flex-1">
-          <FootAddress />
+          <FooterAddress />
         </div>
 
       </div>

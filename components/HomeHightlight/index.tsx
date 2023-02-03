@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Data from "../../fakedata/Data";
-import CustomTag from "../CustomTag/CustomTag";
-import SectionTitle from "../SectionTitle/SectionTitle";
-import Button from "../Button/Button";
+import {
+  CustomTag,
+  Button,
+  SectionTitle
+} from "../";
 
 
-export default function HomeHightlight() {
+export const HomeHightlight = () => {
   return (
     <div className="px-4">
       <SectionTitle title={Data.homeHighlight.catName} />

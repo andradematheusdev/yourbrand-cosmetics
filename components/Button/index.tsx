@@ -1,10 +1,10 @@
-type Props = {
+interface IButtonProps {
   url?: string;
   text: string;
   className?: string;
 }
 
-export default function Button({url = "#", text, className}: Props) {
+export const Button = ({url = "#", text, className}: IButtonProps) => {
   return (
     <a
       href={url}

@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { FiFacebook, FiInstagram, FiYoutube, FiTwitch, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiFacebook, FiInstagram, FiYoutube, FiLinkedin, FiTwitter } from 'react-icons/fi';
 
-export default function SocialIcons() {
+export const SocialIcons = () => {
   return(
     <div className="flex gap-x-1">
       <Link href={"#"}>

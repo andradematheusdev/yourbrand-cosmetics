@@ -2,7 +2,6 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import HomeHightlight from '../components/HomeHightlight/HomeHightlight';
 import Logo from '../components/Logo';
 import {
   Footer,
@@ -12,7 +11,8 @@ import {
   Separator,
   Carousel,
   TopSelling,
-  ScrollToTop
+  ScrollToTop,
+  HomeHightlight
 } from '../components/';
 import Data from '../fakedata/Data';
 

@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { CgSearch } from "react-icons/cg";
-import { SearchPopover } from "../SearchPopover/SearchPopover";
+import { SearchPopover } from "../";
 
-export default function MainNavigation() {
+export const MainNavigation = () => {
   return (
     <nav className="hidden md:flex items-center px-4 uppercase text-sm">
         <ul className="flex h-8 items-center child:px-2 border-r-2 border-neutral-300 pr-1 mr-1">

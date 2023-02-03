@@ -2,7 +2,7 @@ import * as RadixPopover from '@radix-ui/react-popover';
 import { CgSearch } from 'react-icons/cg';
 import { FiArrowRight } from 'react-icons/fi';
 
-export function SearchPopover() {
+export const SearchPopover = () => {
   return(
     <RadixPopover.Root>
       <RadixPopover.Trigger className='flex items-center justify-center'>

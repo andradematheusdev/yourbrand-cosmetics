@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function ProductsCategory() {
+export const ProductsCategory = () => {
   return (
     <ul className="grid grid-cols-2 text-white px-4">
       <li>SHINNEE</li>

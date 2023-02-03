@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
-import {FaChevronUp} from 'react-icons/fa'
+import { FaChevronUp } from 'react-icons/fa'
 
-export function ScrollToTop() {
+export const ScrollToTop = () => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {

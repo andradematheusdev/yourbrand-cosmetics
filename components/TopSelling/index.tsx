@@ -1,6 +1,6 @@
-import Product from "../Product/Product";
+import { Product } from "../";
 
-export default function TopSelling() {
+export const TopSelling = () => {
   return (
     <div className="flex flex-col w-full items-center justify-center text-3xl mt-16">
       <h1 className="mb-8">OS QUERIDINHOS</h1>
