@@ -24,7 +24,7 @@ export const Carousel = (props: IData) => {
           </div>
         </div>
         <div className="flex w-full z-20 p-4 justify-center">
-          <CarouselDots size={props.Data.length} active={activeSlider} />
+          <CarouselDots size={props.Data.length} active={activeSlider} changeSlider={setActiveSlider} />
         </div>
         <CarouselImage source={props.Data[activeSlider].image} />
       </div>
