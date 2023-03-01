@@ -15,6 +15,7 @@ import {
   HomeHightlight
 } from '../components/';
 import Data from '../fakedata/Data';
+import { CarouselContext } from '../contexts/CarouselContext';
 
 const Home: NextPage = () => {
 
@@ -30,7 +31,9 @@ const Home: NextPage = () => {
       <Header />
       <main>
         <section>
+        <CarouselContext>
           <Carousel Data={carousel} />
+        </CarouselContext>
         </section>
         <article className='flex flex-col w-full p-4 lg:p-16 gap-y-2'>
           <HomeHightlight />
