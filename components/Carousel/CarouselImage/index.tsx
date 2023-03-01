@@ -4,7 +4,7 @@ interface ICarouselImageProps{
   source: string;
 }
 
-export default function CarouselImage({source}: ICarouselImageProps) {
+export const CarouselImage = ({source}: ICarouselImageProps) => {
   return (
     <Image src={source} alt="" objectFit={'cover'} layout={'fill'} className="" />
   )

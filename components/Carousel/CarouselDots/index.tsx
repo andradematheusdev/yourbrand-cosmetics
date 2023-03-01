@@ -22,7 +22,7 @@ const Dot = ({active, changeSlider, inputId}: DotProps) => {
   );
 }
 
-export default function CarouselDots({size, active, changeSlider}: ICarouselDotsProps) {
+export const CarouselDots = ({size, active, changeSlider}: ICarouselDotsProps) => {
   function sliderNavigation(size: number){
     const dots = [];
     let isActive;

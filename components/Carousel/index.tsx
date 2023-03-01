@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../../contexts/CarouselContext";
-import CarouselDots from "./CarouselDots";
-import CarouselImage from "./CarouselImage";
+import { CarouselDots } from "./CarouselDots";
+import { CarouselImage } from "./CarouselImage";
 import { CarouselNavigationLeft, CarouselNavigationRight } from "./CarouselNavigation";
 
 interface IData {
