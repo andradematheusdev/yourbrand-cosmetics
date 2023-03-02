@@ -17,7 +17,8 @@ const Dot = ({active, changeSlider, inputId}: DotProps) => {
       name="dots"
       className='appearance-none mx-1 inline-block w-4 h-4 rounded-full border-2 border-white checked:bg-white'
       checked={active}
-      onClick={() => changeSlider(inputId)} 
+      onClick={() => changeSlider(inputId)}
+      readOnly 
     />
   );
 }

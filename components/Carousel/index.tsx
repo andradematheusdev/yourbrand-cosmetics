@@ -17,10 +17,10 @@ export const Carousel = (props: IData) => {
       <div className="flex w-full flex-col h-[600px] max-h-[600px] justify-between relative p-4">
         <div className="grid grid-cols-2 grid-rows-1 z-10 h-full items-center">
           <div className="flex w-full">
-            <CarouselNavigationLeft />
+            <CarouselNavigationLeft dataSize={props.Data.length} />
           </div>
           <div className="flex w-full justify-end">
-            <CarouselNavigationRight />
+            <CarouselNavigationRight dataSize={props.Data.length} />
           </div>
         </div>
         <div className="flex w-full z-20 p-4 justify-center">

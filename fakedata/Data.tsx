@@ -19,6 +19,10 @@ const Data = {
       id: 2,
       image: '/images/carousel/image2.jpg'
     },
+    {
+      id: 3,
+      image: '/images/carousel/image3.jpg'
+    },
   ],
 }
 
