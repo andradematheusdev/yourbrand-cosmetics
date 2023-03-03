@@ -19,7 +19,7 @@ import { CarouselContext } from '../contexts/CarouselContext';
 
 const Home: NextPage = () => {
 
-  const {carousel}  = Data;
+  const { carousel }  = Data;
 
   return (
     <div>
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <section>
         <CarouselContext>
           {/* <Carousel Data={carousel} /> */}
-          <Carousel />
+          <Carousel data={carousel} />
         </CarouselContext>
         </section>
         <article className='flex flex-col w-full p-4 lg:p-16 gap-y-2'>

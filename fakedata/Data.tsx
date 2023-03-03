@@ -13,15 +13,21 @@ const Data = {
   carousel: [
     {
       id: 1,
-      image: '/images/carousel/image1.jpg'
+      image: '/images/carousel/image1.jpg',
+      title: 'Loren Ipsun 1',
+      caption: 'Loren ipsun dolor sit amet consecteur adpsing elit.'
     },
     {
       id: 2,
-      image: '/images/carousel/image2.jpg'
+      image: '/images/carousel/image2.jpg',
+      title: 'Loren Ipsun 2',
+      caption: 'Loren ipsun dolor sit amet consecteur adpsing elit.'
     },
     {
       id: 3,
-      image: '/images/carousel/image3.jpg'
+      image: '/images/carousel/image3.jpg',
+      title: 'Loren Ipsun 3',
+      caption: 'Loren ipsun dolor sit amet consecteur adpsing elit.'
     },
   ],
 }
