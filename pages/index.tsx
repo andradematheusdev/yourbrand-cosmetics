@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <section>
         <CarouselContext>
           {/* <Carousel Data={carousel} /> */}
-          {/* <Carousel /> */}
+          <Carousel />
         </CarouselContext>
         </section>
         <article className='flex flex-col w-full p-4 lg:p-16 gap-y-2'>
