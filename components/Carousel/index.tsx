@@ -1,32 +1,28 @@
-import { useContext } from "react";
-import { Context } from "../../contexts/CarouselContext";
-import { CarouselDots } from "./CarouselDots";
-import { CarouselImage } from "./CarouselImage";
-import { CarouselNavigationLeft, CarouselNavigationRight } from "./CarouselNavigation";
+import Carousel from "react-bootstrap/Carousel";
+import Image from "next/image";
 
-interface IData {
-  Data: {
-    id: number;
-    image: string;
-  }[];
-}
-
-export const Carousel = (props: IData) => {
-  const {activeSlider, setActiveSlider} = useContext(Context);
+export const CustomCarousel = () => {
   return (
-      <div className="flex w-full flex-col h-[600px] max-h-[600px] justify-between relative p-4">
-        <div className="grid grid-cols-2 grid-rows-1 z-10 h-full items-center">
-          <div className="flex w-full">
-            <CarouselNavigationLeft dataSize={props.Data.length} />
-          </div>
-          <div className="flex w-full justify-end">
-            <CarouselNavigationRight dataSize={props.Data.length} />
-          </div>
+    <Carousel>
+      <Carousel.Item>
+        <div className="h-64">
+          <Image src="/images/carousel/image1.jpg" alt="First slide" layout="fill" objectFit="cover" />
         </div>
-        <div className="flex w-full z-20 p-4 justify-center">
-          <CarouselDots size={props.Data.length} active={activeSlider} changeSlider={setActiveSlider} />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <div className="h-64">
+          <Image src="/images/carousel/image2.jpg" alt="Second slide" layout="fill" objectFit="cover" />
         </div>
-        <CarouselImage source={props.Data[activeSlider].image} />
-      </div>
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 };

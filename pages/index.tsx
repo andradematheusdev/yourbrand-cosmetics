@@ -9,10 +9,10 @@ import {
   InstaPics,
   SectionTitle,
   Separator,
-  Carousel,
   TopSelling,
   ScrollToTop,
-  HomeHightlight
+  HomeHightlight,
+  CustomCarousel as Carousel,
 } from '../components/';
 import Data from '../fakedata/Data';
 import { CarouselContext } from '../contexts/CarouselContext';
@@ -32,7 +32,8 @@ const Home: NextPage = () => {
       <main>
         <section>
         <CarouselContext>
-          <Carousel Data={carousel} />
+          {/* <Carousel Data={carousel} /> */}
+          {/* <Carousel /> */}
         </CarouselContext>
         </section>
         <article className='flex flex-col w-full p-4 lg:p-16 gap-y-2'>

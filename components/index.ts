@@ -19,3 +19,4 @@ export * from './Separator';
 export * from './Sitemap';
 export * from './SocialIcons';
 export * from './TopSelling';
+export * from './Carousel';
