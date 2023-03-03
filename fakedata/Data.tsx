@@ -30,6 +30,36 @@ const Data = {
       caption: 'Loren ipsun dolor sit amet consecteur adpsing elit.'
     },
   ],
+  products: [
+    {
+      id: 1,
+      image: '/images/products/ycc.jpg',
+      name: 'Youcare collage',
+      price: "59.90",
+      rating: 5,
+    },
+    {
+      id: 2,
+      image: '/images/products/stm.jpg',
+      name: 'SILK TOUCH MASK',
+      price: "89.00",
+      rating: 4,
+    },
+    {
+      id: 3,
+      image: '/images/products/nc.jpg',
+      name: 'Natural Cream',
+      price: "110.10",
+      rating: 2,
+    },
+    {
+      id: 4,
+      image: '/images/products/lp.jpg',
+      name: 'Liquid pearl',
+      price: "22.50",
+      rating: 3,
+    },
+  ],
 }
 
 export default Data;
