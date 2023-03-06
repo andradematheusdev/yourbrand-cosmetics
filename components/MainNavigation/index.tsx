@@ -7,22 +7,22 @@ export const MainNavigation = () => {
         <ul className="flex h-8 items-center child:px-2 border-r-2 border-neutral-300 pr-1 mr-1">
           <li>
             <Link href={"/"}>
-              <a className="border-b-2 border-black">Home</a>
+              <a className="font-bold transition-colors">Home</a>
             </Link>
           </li>
           <li>
             <Link href={"/"}>
-              <a className="hover:border-b-2 hover:border-neutral-300 transition-colors">Loja</a>
+              <a className="transition-colors">Loja</a>
             </Link>
           </li>
           <li>
             <Link href={"/"}>
-              <a className="hover:border-b-2 hover:border-neutral-300 transition-colors">Linhas</a>
+              <a className="transition-colors">Linhas</a>
             </Link>
           </li>
           <li>
             <Link href={"/"}>
-              <a className="hover:border-b-2 hover:border-neutral-300 transition-colors">Sobre</a>
+              <a className="transition-colors">Sobre</a>
             </Link>
           </li>
           <li>
@@ -31,10 +31,10 @@ export const MainNavigation = () => {
         </ul>
         <ul className="flex child:px-2">
           <li>
-            <Link href={"#"}><a className="font-bold hover:text-neutral-700 transition-colors">Registrar-se</a></Link>
+            <Link href={"#"}><a className="transition-colors">Registrar-se</a></Link>
           </li>
           <li>
-            <Link href={"#"}><a className="hover:text-neutral-700 transition-colors">Login</a></Link>
+            <Link href={"#"}><a className="transition-colors">Login</a></Link>
           </li>
         </ul>
       </nav>

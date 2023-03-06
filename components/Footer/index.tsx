@@ -9,6 +9,7 @@ import {
 } from "../";
 
 export const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="flex flex-col w-full items-center justify-between bg-neutral-900 pt-16">
       <div className="mb-8">
@@ -53,7 +54,7 @@ export const Footer = () => {
       <div className="px-4 mt-4 w-full">
         <div className="flex flex-wrap w-full py-6 items-center justify-center md:justify-between border-t border-neutral-700 px-6">
           <span className="text-white flex-1 flex justify-center md:justify-start">
-            <Logo color="#fff" className="mr-2" /> Ⓒ 2022
+            <Logo color="#fff" className="mr-2" /> Ⓒ { year }
           </span>
           <span className="text-white">Feito por Matheus.Dev</span>
         </div>
