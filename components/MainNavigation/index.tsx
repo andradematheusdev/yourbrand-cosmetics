@@ -34,7 +34,7 @@ export const MainNavigation = () => {
             <Link href={"#"}><a className="transition-colors">Registrar-se</a></Link>
           </li>
           <li>
-            <Link href={"#"}><a className="transition-colors">Login</a></Link>
+            <Link href={"/login"}><a className="transition-colors">Login</a></Link>
           </li>
         </ul>
       </nav>

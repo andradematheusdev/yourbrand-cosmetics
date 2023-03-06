@@ -10,6 +10,7 @@ export const Announcement = ({message}: IAnnouncementProps) => {
   const [isAnnounceVisible, setIsAnnounceVisible] = useState(true);
 
   function handleClick(){
+    console.log(isAnnounceVisible);    
     setIsAnnounceVisible(!isAnnounceVisible);
   }
 
@@ -23,7 +24,7 @@ export const Announcement = ({message}: IAnnouncementProps) => {
         <span className='-mr-6'>{message}</span>
       </div>
       <div>
-        <a role={'button'} onClick={handleClick}>
+        <a role={'button'} onClick={() => handleClick()}>
           <CgClose size={20} className="leading-none" />
         </a>
       </div>

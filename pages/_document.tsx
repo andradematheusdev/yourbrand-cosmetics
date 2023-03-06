@@ -1,5 +1,5 @@
-import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document'
-import { SearchContext } from '../contexts/SearchContext'
+import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
+import { SearchContext } from '../contexts/SearchContext';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -19,7 +19,7 @@ class MyDocument extends Document {
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossOrigin="anonymous" defer></script>
         </Head>
         <body>
-          <SearchContext>
+          <SearchContext>           
             <Main />
           </SearchContext>
           <NextScript />

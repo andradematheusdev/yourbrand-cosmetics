@@ -4,18 +4,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../components/Logo';
 import {
-  Footer,
-  Header,
   InstaPics,
   SectionTitle,
   Separator,
   TopSelling,
-  ScrollToTop,
   HomeHightlight,
   CustomCarousel as Carousel,
 } from '../components/';
 import Data from '../fakedata/Data';
 import { CarouselContext } from '../contexts/CarouselContext';
+import { Layout } from '../components/Layout/Layout';
 
 const Home: NextPage = () => {
 
@@ -28,11 +26,9 @@ const Home: NextPage = () => {
         <meta name="description" content="The brand that focuses on you!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <main>
         <section>
         <CarouselContext>
-          {/* <Carousel Data={carousel} /> */}
           <Carousel data={carousel} />
         </CarouselContext>
         </section>
@@ -77,8 +73,6 @@ const Home: NextPage = () => {
           <InstaPics image='/images/products/youcareshinnee.jpg'/>
         </div>
       </section>
-      <ScrollToTop />
-      <Footer />
     </div>
   )
 }
