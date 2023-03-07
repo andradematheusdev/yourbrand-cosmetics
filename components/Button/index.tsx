@@ -5,11 +5,11 @@ interface IButtonProps {
 
 export const Button = ({url = "#", text, ...rest}: IButtonProps) => {
   return (
-    <button
+    <a
+      href={url}
       className={` flex items-center justify-center border-2 border-black py-3 p-4 font-bold text-sm whitespace-nowrap hover:bg-black hover:text-white transition-colors`}
-      {...rest}
     >
       {text}
-    </button>
+    </a>
   )
 }
