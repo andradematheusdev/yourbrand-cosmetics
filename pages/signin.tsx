@@ -1,10 +1,12 @@
 import { GetServerSideProps, NextPage } from 'next';
+import {useRouter} from 'next/router';
 import Logo from '../components/Logo';
 import { Button } from '../components';
 import {Context} from '../contexts/UserAuthContext';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useMemo, useState } from 'react';
 
-const Login: NextPage = () => {
+const SignInPage: NextPage = () => {
+  const router = useRouter();
   const [userMail, setUserMail] = useState("");
   const [userPass, setUserPass] = useState("");
 
@@ -19,8 +21,8 @@ const Login: NextPage = () => {
     }
   } 
 
-  useEffect(() => {
-    console.log(isAuthenticated);  
+  useMemo(() => {
+    isAuthenticated ? router.push({pathname: '/'}) : "";
   },[,isAuthenticated])
 
   // useEffect(() => {
@@ -71,4 +73,4 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   }
 }
 
-export default Login
+export default SignInPage

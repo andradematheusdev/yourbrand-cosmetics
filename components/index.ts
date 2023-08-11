@@ -20,3 +20,4 @@ export * from './Sitemap';
 export * from './SocialIcons';
 export * from './TopSelling';
 export * from './Carousel';
+export * from './UserContextMenu';
